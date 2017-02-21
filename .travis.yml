@@ -18,6 +18,6 @@ install:
 script:
   - "ansible-playbook -i ci/inventory ci/$SITE --syntax-check"
 
-  - "ansible-playbook -i ci/inventory ci/playbook.yml --connection=local --sudo -vv"
+  - "ansible-playbook -i ci/inventory ci/playbook.yml --connection=local --sudo -vvvv"
 
   - "node --version"
