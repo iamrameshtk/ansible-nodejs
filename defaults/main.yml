@@ -1,7 +1,7 @@
 ---
 nodejs_playbook_version: "0.1.7"
 nodejs_install_source: build #One of: build (from source), nodesource_debs (works only on debian-based distros)
-nodejs_version: "0.10.36"
+nodejs_version: "0.10.48"
 nodejs_path: "/usr/local/"
 nodejs_tmp_dir: "/tmp/"
 nodejs_global_packages:
