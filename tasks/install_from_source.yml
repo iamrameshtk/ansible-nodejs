@@ -23,7 +23,7 @@
   when: wanted_version_installed.rc == 1
 
 - name: Compile nodejs {{nodejs_version_tag}}
-  shell: ./configure --prefix={{nodejs_path}} && make
+  shell: ./configure --prefix={{nodejs_path}} && make chdir={{nodejs_tmp_dir}}{{nodejs_file_tag}}
   when: wanted_version_installed.rc == 1
 
 - name: Install nodejs {{nodejs_version_tag}}
